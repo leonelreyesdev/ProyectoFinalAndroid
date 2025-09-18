@@ -1,14 +1,27 @@
-# Gradle files
+# =========================
+# Android / Gradle / Studio
+# =========================
+
+# Gradle
 .gradle/
 build/
 **/build/
+!gradle-wrapper.jar
+.gradle/
+out/
 
-# Local configuration file (SDK path, etc.)
+# Local configuration file (SDK/NDK path, API keys, etc.)
 local.properties
 
-# IntelliJ/Android Studio files
+# Android Studio / IntelliJ
 .idea/
 *.iml
+*.ipr
+*.iws
+
+# Keystore files (¡NO subir claves privadas!)
+*.jks
+*.keystore
 
 # Logs
 *.log
@@ -17,12 +30,33 @@ local.properties
 .DS_Store
 Thumbs.db
 
-# NDK and external builds
+# External Native Build
 .cxx/
 .externalNativeBuild/
 
-# Captures
-captures/
-
 # Generated files
-out/
+captures/
+outputs/
+
+# Google Services (si lo usas, mejor manejarlo en privado)
+google-services.json
+GoogleService-Info.plist
+
+# Crashlytics (Firebase)
+fabric.properties
+crashlytics.properties
+crashlytics-build.properties
+
+# Others
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# NDK / CMake
+obj/
+
+# =========================
+# End
+# =========================

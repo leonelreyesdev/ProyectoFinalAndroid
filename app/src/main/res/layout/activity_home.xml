@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnJuego1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juego 1"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnJuego2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juego 2"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnJuego3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juego 3"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnJuego4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juego 4"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnJuego5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juego 5"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnJuego6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Juego 6"
+            android:layout_marginBottom="12dp" />
+    </LinearLayout>
+</ScrollView>

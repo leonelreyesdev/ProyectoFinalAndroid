@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#ECEFF1">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turno de X"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginBottom="24dp">
+
+        <Button android:id="@+id/btn00" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn01" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn02" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn10" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn11" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn12" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn20" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn21" style="@style/TicTacToeCell" />
+        <Button android:id="@+id/btn22" style="@style/TicTacToeCell" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

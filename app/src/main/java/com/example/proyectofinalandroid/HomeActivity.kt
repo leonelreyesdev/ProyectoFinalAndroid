@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectofinalandroid.pacman.PacmanActivity
+import com.example.proyectofinalandroid.TicTacToe.TicTacToeActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,14 +18,17 @@ class HomeActivity : AppCompatActivity() {
         val tvWelcome = findViewById<TextView>(R.id.tvWelcome)
         tvWelcome.text = "¡Bienvenido, $username!"
 
+        // Juego 1: Pac-Man
         findViewById<Button>(R.id.btnJuego1).setOnClickListener {
             startActivity(Intent(this, PacmanActivity::class.java))
         }
 
+        // Juego 2: Tres en Raya
         findViewById<Button>(R.id.btnJuego2).setOnClickListener {
-            Toast.makeText(this, "Juego 2 aún no disponible", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, TicTacToeActivity::class.java))
         }
 
+        // Juegos 3 a 6: aún no implementados
         findViewById<Button>(R.id.btnJuego3).setOnClickListener {
             Toast.makeText(this, "Juego 3 aún no disponible", Toast.LENGTH_SHORT).show()
         }

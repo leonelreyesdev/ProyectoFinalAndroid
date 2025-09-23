@@ -34,7 +34,7 @@
             android:id="@+id/btnJuego2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🧩 Juego 2"
+            android:text="⭕❌ TicTacToe"
             android:background="#1565C0"
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />

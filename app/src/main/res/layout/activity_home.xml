@@ -25,8 +25,8 @@
             android:id="@+id/btnJuego1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🎯 Juego 1"
-            android:background="#2E7D32"
+            android:text="👾 🟡 👻 Pacman"
+            android:background="#FFEB3B"
             android:textColor="#FFFFFF"
             android:layout_marginTop="20dp" />
 

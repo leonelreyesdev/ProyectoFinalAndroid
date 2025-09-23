@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFDE7">
+    android:background="#1C1C1C">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,51 +15,65 @@
             android:id="@+id/tvWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¡Bienvenido!"
+            android:text="🎮 ¡Bienvenido Jugador! 🎲"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginBottom="32dp" />
+            android:textColor="#FFD700"
+            android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnJuego1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Juego 1"
-            android:layout_marginBottom="12dp" />
+            android:text="🎯 Juego 1"
+            android:background="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
 
         <Button
             android:id="@+id/btnJuego2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Juego 2"
-            android:layout_marginBottom="12dp" />
+            android:text="🧩 Juego 2"
+            android:background="#1565C0"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnJuego3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Juego 3"
-            android:layout_marginBottom="12dp" />
+            android:text="♟ Juego 3"
+            android:background="#6A1B9A"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnJuego4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Juego 4"
-            android:layout_marginBottom="12dp" />
+            android:text="⚡ Juego 4"
+            android:background="#C62828"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnJuego5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Juego 5"
-            android:layout_marginBottom="12dp" />
+            android:text="🕹 Juego 5"
+            android:background="#EF6C00"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnJuego6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Juego 6"
-            android:layout_marginBottom="12dp" />
+            android:text="🏆 Juego 6"
+            android:background="#00897B"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
     </LinearLayout>
 </ScrollView>

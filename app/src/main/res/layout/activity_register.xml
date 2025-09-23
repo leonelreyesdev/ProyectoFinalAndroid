@@ -3,48 +3,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
     android:gravity="center"
-    android:background="#F5F5F5">
+    android:background="#1C1C1C"
+    android:padding="24dp">
 
     <TextView
+        android:id="@+id/tvRegisterTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro de Usuario"
+        android:text="⚔ Registro de Usuario 🎲"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:textColor="#FFD700" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:hint="👤 Usuario"
         android:inputType="textPersonName"
-        android:layout_marginBottom="16dp" />
+        android:background="#2E2E2E"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:hint="🔒 Contraseña"
         android:inputType="textPassword"
-        android:layout_marginBottom="24dp" />
+        android:background="#2E2E2E"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrarse"
+        android:text="✅ Registrarse"
         android:backgroundTint="#4CAF50"
         android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
 
     <Button
         android:id="@+id/btnGoToLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Ya tienes cuenta? Inicia sesión"
-        android:layout_marginTop="16dp"
+        android:text="🎮 ¿Ya tienes cuenta? Inicia sesión"
         android:backgroundTint="#FFEB3B"
         android:textColor="#000000" />
 </LinearLayout>

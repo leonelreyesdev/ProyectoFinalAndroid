@@ -5,46 +5,58 @@
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center"
-    android:background="#E3F2FD">
+    android:background="#121212">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
-        android:textSize="24sp"
+        android:text="Zona Gamer"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:textColor="#FFB300"
+        android:layout_marginBottom="32dp" />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:hint="Jugador"
         android:inputType="textPersonName"
-        android:layout_marginBottom="16dp" />
+        android:padding="14dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:backgroundTint="#FFB300"
+        android:layout_marginBottom="20dp" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:hint="Clave secreta"
         android:inputType="textPassword"
-        android:layout_marginBottom="24dp" />
+        android:padding="14dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:backgroundTint="#FFB300"
+        android:layout_marginBottom="28dp" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar"
-        android:backgroundTint="#2196F3"
-        android:textColor="#FFFFFF" />
+        android:text="🎮 Entrar a la partida"
+        android:textStyle="bold"
+        android:backgroundTint="#FFB300"
+        android:textColor="#121212"
+        android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/btnGoToRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta? Regístrate aquí"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#FFEB3B"
-        android:textColor="#000000" />
+        android:text="➕ Crear nuevo jugador"
+        android:textStyle="bold"
+        android:backgroundTint="#333333"
+        android:textColor="#FFB300"
+        android:layout_marginTop="8dp" />
 </LinearLayout>

@@ -14,9 +14,15 @@ class PacmanActivity : AppCompatActivity() {
 
         gameView = findViewById(R.id.gameView)
 
+        // Controles de movimiento
         findViewById<Button>(R.id.btnUp).setOnClickListener { gameView.moveUp() }
         findViewById<Button>(R.id.btnDown).setOnClickListener { gameView.moveDown() }
         findViewById<Button>(R.id.btnLeft).setOnClickListener { gameView.moveLeft() }
         findViewById<Button>(R.id.btnRight).setOnClickListener { gameView.moveRight() }
+
+        // Botón de reinicio
+        findViewById<Button>(R.id.btnRestartGame).setOnClickListener {
+            gameView.resetGame()
+        }
     }
 }

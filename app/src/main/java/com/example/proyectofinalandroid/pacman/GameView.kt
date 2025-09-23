@@ -33,7 +33,7 @@ class GameView(context: Context, attrs: AttributeSet) : View(context, attrs) {
         resetGame()
     }
 
-    private fun resetGame() {
+    fun resetGame() {
         pacmanX = 100f
         pacmanY = 100f
         score = 0

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".BreakOut.BreakoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Memory.MemoryGameActivity"
+            android:exported="false" />
+        <activity
             android:name=".TicTacToe.TicTacToeActivity"
             android:exported="true" />
         <activity android:name=".pacman.PacmanActivity" />

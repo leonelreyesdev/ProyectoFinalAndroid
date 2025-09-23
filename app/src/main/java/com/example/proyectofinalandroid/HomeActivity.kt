@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectofinalandroid.pacman.PacmanActivity
 import com.example.proyectofinalandroid.TicTacToe.TicTacToeActivity
+import com.example.proyectofinalandroid.Memory.MemoryGameActivity
+import com.example.proyectofinalandroid.BreakOut.BreakoutActivity
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,15 +30,17 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, TicTacToeActivity::class.java))
         }
 
-        // Juegos 3 a 6: aún no implementados
+        // Juego 3: Memorama
         findViewById<Button>(R.id.btnJuego3).setOnClickListener {
-            Toast.makeText(this, "Juego 3 aún no disponible", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MemoryGameActivity::class.java))
         }
 
+        // Juego 4: Breakout
         findViewById<Button>(R.id.btnJuego4).setOnClickListener {
-            Toast.makeText(this, "Juego 4 aún no disponible", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, BreakoutActivity::class.java))
         }
 
+        // Juegos 5 a 6: aún no implementados
         findViewById<Button>(R.id.btnJuego5).setOnClickListener {
             Toast.makeText(this, "Juego 5 aún no disponible", Toast.LENGTH_SHORT).show()
         }

@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Juegos ya existentes -->
         <activity
             android:name=".BreakOut.BreakoutActivity"
             android:exported="true" />
@@ -21,17 +23,26 @@
             android:name=".TicTacToe.TicTacToeActivity"
             android:exported="true" />
         <activity android:name=".pacman.PacmanActivity" />
+
+        <!-- Login y navegación -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HomeActivity" />
-    </application>
 
+        <!-- 🚀 Nuevos juegos -->
+        <activity
+            android:name=".Snake.SnakeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Tetris.TetrisActivity"
+            android:exported="true" />
+
+    </application>
 </manifest>

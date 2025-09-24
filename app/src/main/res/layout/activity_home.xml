@@ -34,7 +34,7 @@
             android:id="@+id/btnJuego2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⭕ ❌ TicTacToe"
+            android:text="⭕ ❌ Tic Tac Toe"
             android:background="#673AB7"
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />
@@ -43,7 +43,7 @@
             android:id="@+id/btnJuego3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🍎❓🍇 Memory"
+            android:text="🍎 ❓ 🍇 Memory"
             android:background="#2196F3"
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />
@@ -52,7 +52,7 @@
             android:id="@+id/btnJuego4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💥⚫ BreakOut"
+            android:text="💥 ⚫ BreakOut"
             android:background="#C62828"
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />
@@ -61,8 +61,8 @@
             android:id="@+id/btnJuego5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🕹 Juego 5"
-            android:background="#EF6C00"
+            android:text="🐍 Snake"
+            android:background="#4CAF50"
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />
 
@@ -70,8 +70,8 @@
             android:id="@+id/btnJuego6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🏆 Juego 6"
-            android:background="#00897B"
+            android:text="🎮 Tetris"
+            android:background="#3F51B5"
             android:textColor="#FFFFFF"
             android:layout_marginTop="12dp" />
 

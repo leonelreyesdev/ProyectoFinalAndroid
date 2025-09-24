@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tetris_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1020">
+
+    <!-- Vista del juego Tetris -->
+    <com.example.proyectofinalandroid.Tetris.TetrisView
+        android:id="@+id/tetrisView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Panel de controles -->
+    <LinearLayout
+        android:id="@+id/controlPanelTetris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#DDDDDD">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬅️"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔄"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➡️"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬇️"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Botón de reinicio -->
+    <Button
+        android:id="@+id/btnRestartTetris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar juego"
+        android:layout_above="@id/controlPanelTetris"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <!-- Puntaje -->
+    <TextView
+        android:id="@+id/tvScoreTetris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#00FF9C"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snake_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071025">
+
+    <!-- Vista del juego Snake (ocupa toda la pantalla) -->
+    <com.example.proyectofinalandroid.Snake.SnakeView
+        android:id="@+id/snakeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Puntaje arriba -->
+    <TextView
+        android:id="@+id/tvScoreSnake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#00FF9C"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón de reinicio -->
+    <Button
+        android:id="@+id/btnRestartSnake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REINICIAR JUEGO"
+        android:layout_above="@id/controlPanelSnake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <!-- Panel de controles en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/controlPanelSnake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#DDDDDD">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬅️"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬆️"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬇️"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➡️"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</RelativeLayout>
